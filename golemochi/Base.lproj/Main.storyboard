@@ -35,25 +35,6 @@
                                     <constraint firstAttribute="width" constant="300" id="u02-nm-bEX"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="f9d-WH-Th2">
-                                <rect key="frame" x="124" y="178" width="476" height="384"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="450" id="2FN-jO-30L"/>
-                                    <constraint firstAttribute="width" secondItem="f9d-WH-Th2" secondAttribute="height" multiplier="119:96" id="Iwv-Hg-CJP"/>
-                                    <constraint firstAttribute="height" constant="384" id="O9M-Mn-mA0"/>
-                                    <constraint firstAttribute="width" constant="476" id="Yfy-Fx-byl"/>
-                                    <constraint firstAttribute="width" constant="476" id="szK-Ey-hFu"/>
-                                    <constraint firstAttribute="height" constant="386" id="yhm-ib-E8i"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Iwv-Hg-CJP"/>
-                                        <exclude reference="O9M-Mn-mA0"/>
-                                        <exclude reference="szK-Ey-hFu"/>
-                                        <exclude reference="yhm-ib-E8i"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="L5Z-xm-5k9">
                                 <rect key="frame" x="202" y="62" width="188" height="50"/>
                                 <subviews>
@@ -80,22 +61,58 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="SaG-2R-2LW">
-                                <rect key="frame" x="165" y="136" width="270" height="98"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="f9d-WH-Th2">
+                                <rect key="frame" x="124" y="178" width="476" height="384"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="450" id="2FN-jO-30L"/>
+                                    <constraint firstAttribute="width" secondItem="f9d-WH-Th2" secondAttribute="height" multiplier="119:96" id="Iwv-Hg-CJP"/>
+                                    <constraint firstAttribute="height" constant="384" id="O9M-Mn-mA0"/>
+                                    <constraint firstAttribute="width" constant="476" id="Yfy-Fx-byl"/>
+                                    <constraint firstAttribute="width" constant="476" id="szK-Ey-hFu"/>
+                                    <constraint firstAttribute="height" constant="386" id="yhm-ib-E8i"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Iwv-Hg-CJP"/>
+                                        <exclude reference="O9M-Mn-mA0"/>
+                                        <exclude reference="szK-Ey-hFu"/>
+                                        <exclude reference="yhm-ib-E8i"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="SaG-2R-2LW">
+                                <rect key="frame" x="155" y="136" width="290" height="98"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="gMo-5e-9pC">
                                         <rect key="frame" x="0.0" y="0.0" width="95" height="98"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="3fq-9c-egc">
-                                        <rect key="frame" x="175" y="0.0" width="95" height="98"/>
+                                        <rect key="frame" x="195" y="0.0" width="95" height="98"/>
                                     </imageView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="3fq-9c-egc" firstAttribute="leading" secondItem="SaG-2R-2LW" secondAttribute="leading" id="9pR-KJ-mUG"/>
+                                    <constraint firstItem="3fq-9c-egc" firstAttribute="top" secondItem="gMo-5e-9pC" secondAttribute="bottom" constant="80" id="FaK-X5-R0H"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9pR-KJ-mUG"/>
+                                        <exclude reference="FaK-X5-R0H"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact" axis="vertical" spacing="10">
+                                    <mask key="constraints">
+                                        <exclude reference="9pR-KJ-mUG"/>
+                                        <include reference="FaK-X5-R0H"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="L5Z-xm-5k9" firstAttribute="centerX" secondItem="FYw-bB-UgJ" secondAttribute="centerX" id="0Uk-9Y-4Ku"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f9d-WH-Th2" secondAttribute="bottom" id="5gQ-oi-bxk"/>
+                            <constraint firstItem="SaG-2R-2LW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="77q-cW-rw4"/>
                             <constraint firstItem="f9d-WH-Th2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="60" id="9Bi-3B-C1G"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="37A-8h-13D" secondAttribute="bottom" id="AFS-tb-DIf"/>
                             <constraint firstItem="PAj-FV-hvJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BFV-i2-VUD"/>
@@ -111,6 +128,7 @@
                             <constraint firstItem="37A-8h-13D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Y5z-Ha-aLJ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PAj-FV-hvJ" secondAttribute="bottom" id="bpO-DU-N6M"/>
                             <constraint firstItem="f9d-WH-Th2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="124" id="fCt-qQ-3mo"/>
+                            <constraint firstItem="SaG-2R-2LW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="i2R-2n-0m7"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f9d-WH-Th2" secondAttribute="bottom" constant="64" id="oLg-hV-zEj"/>
                             <constraint firstItem="FYw-bB-UgJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="rP8-xH-fPi"/>
                             <constraint firstItem="FYw-bB-UgJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x1q-Ex-4Rx"/>
@@ -118,12 +136,22 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="77q-cW-rw4"/>
+                                <exclude reference="i2R-2n-0m7"/>
                                 <exclude reference="C8d-Ay-Sue"/>
                                 <exclude reference="KSR-xi-jKi"/>
                                 <exclude reference="fCt-qQ-3mo"/>
                                 <exclude reference="zqh-9S-Sox"/>
                                 <exclude reference="K3N-Se-6LV"/>
                                 <exclude reference="oLg-hV-zEj"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="77q-cW-rw4"/>
+                                <exclude reference="Kf3-8x-Dag"/>
+                                <exclude reference="RKa-YA-Xyq"/>
+                                <include reference="i2R-2n-0m7"/>
                             </mask>
                         </variation>
                     </view>
