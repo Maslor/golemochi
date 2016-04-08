@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		036BEC7C1CB7E9F10036AC32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036BEC7B1CB7E9F10036AC32 /* AppDelegate.swift */; };
+		036BEC7E1CB7E9F10036AC32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036BEC7D1CB7E9F10036AC32 /* ViewController.swift */; };
+		036BEC811CB7E9F10036AC32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 036BEC7F1CB7E9F10036AC32 /* Main.storyboard */; };
+		036BEC831CB7E9F10036AC32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036BEC821CB7E9F10036AC32 /* Assets.xcassets */; };
+		036BEC861CB7E9F10036AC32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 036BEC841CB7E9F10036AC32 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		036BEC781CB7E9F10036AC32 /* golemochi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = golemochi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		036BEC7B1CB7E9F10036AC32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		036BEC7D1CB7E9F10036AC32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		036BEC801CB7E9F10036AC32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		036BEC821CB7E9F10036AC32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		036BEC851CB7E9F10036AC32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		036BEC871CB7E9F10036AC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		036BEC751CB7E9F10036AC32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		036BEC6F1CB7E9F10036AC32 = {
+			isa = PBXGroup;
+			children = (
+				036BEC7A1CB7E9F10036AC32 /* golemochi */,
+				036BEC791CB7E9F10036AC32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		036BEC791CB7E9F10036AC32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				036BEC781CB7E9F10036AC32 /* golemochi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		036BEC7A1CB7E9F10036AC32 /* golemochi */ = {
+			isa = PBXGroup;
+			children = (
+				036BEC7B1CB7E9F10036AC32 /* AppDelegate.swift */,
+				036BEC7D1CB7E9F10036AC32 /* ViewController.swift */,
+				036BEC7F1CB7E9F10036AC32 /* Main.storyboard */,
+				036BEC821CB7E9F10036AC32 /* Assets.xcassets */,
+				036BEC841CB7E9F10036AC32 /* LaunchScreen.storyboard */,
+				036BEC871CB7E9F10036AC32 /* Info.plist */,
+			);
+			path = golemochi;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		036BEC771CB7E9F10036AC32 /* golemochi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 036BEC8A1CB7E9F10036AC32 /* Build configuration list for PBXNativeTarget "golemochi" */;
+			buildPhases = (
+				036BEC741CB7E9F10036AC32 /* Sources */,
+				036BEC751CB7E9F10036AC32 /* Frameworks */,
+				036BEC761CB7E9F10036AC32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = golemochi;
+			productName = golemochi;
+			productReference = 036BEC781CB7E9F10036AC32 /* golemochi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		036BEC701CB7E9F10036AC32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = maslor;
+				TargetAttributes = {
+					036BEC771CB7E9F10036AC32 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 99FWSBF8EN;
+					};
+				};
+			};
+			buildConfigurationList = 036BEC731CB7E9F10036AC32 /* Build configuration list for PBXProject "golemochi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 036BEC6F1CB7E9F10036AC32;
+			productRefGroup = 036BEC791CB7E9F10036AC32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				036BEC771CB7E9F10036AC32 /* golemochi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		036BEC761CB7E9F10036AC32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036BEC861CB7E9F10036AC32 /* LaunchScreen.storyboard in Resources */,
+				036BEC831CB7E9F10036AC32 /* Assets.xcassets in Resources */,
+				036BEC811CB7E9F10036AC32 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		036BEC741CB7E9F10036AC32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				036BEC7E1CB7E9F10036AC32 /* ViewController.swift in Sources */,
+				036BEC7C1CB7E9F10036AC32 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		036BEC7F1CB7E9F10036AC32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				036BEC801CB7E9F10036AC32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		036BEC841CB7E9F10036AC32 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				036BEC851CB7E9F10036AC32 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		036BEC881CB7E9F10036AC32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		036BEC891CB7E9F10036AC32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		036BEC8B1CB7E9F10036AC32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = golemochi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maslor.golemochi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		036BEC8C1CB7E9F10036AC32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = golemochi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maslor.golemochi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		036BEC731CB7E9F10036AC32 /* Build configuration list for PBXProject "golemochi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				036BEC881CB7E9F10036AC32 /* Debug */,
+				036BEC891CB7E9F10036AC32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		036BEC8A1CB7E9F10036AC32 /* Build configuration list for PBXNativeTarget "golemochi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				036BEC8B1CB7E9F10036AC32 /* Debug */,
+				036BEC8C1CB7E9F10036AC32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 036BEC701CB7E9F10036AC32 /* Project object */;
+}
