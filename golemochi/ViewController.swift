@@ -10,24 +10,70 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var golemImage : UIImageView!
+    @IBOutlet weak var skull3: UIImageView!
+    @IBOutlet weak var skull2: UIImageView!
+    @IBOutlet weak var skull1: UIImageView!
+    @IBOutlet weak var golemImage : MonsterImg!
     @IBOutlet weak var foodImage : DragImage!
     @IBOutlet weak var heartImage : DragImage!
     
+    let DIM_ALPHA : CGFloat = 0.2
+    let OPAQUE : CGFloat = 1.0
+    let MAX_PENALTIES = 3
+    
+    var penalties = 0
+    var timer : NSTimer!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var imageArray = [UIImage]()
+        skull1.alpha = DIM_ALPHA
+        skull2.alpha = DIM_ALPHA
+        skull3.alpha = DIM_ALPHA
         
-        for i in 1...4 {
-            let image = UIImage(named: "idle\(i).png")
-            imageArray.append(image!)
+        foodImage.targetElement = golemImage
+        heartImage.targetElement = golemImage
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:#selector(ViewController.itemDroppedOnCharacter(_:)), name: "onTargetDropped", object: nil)
+        
+        startTimer()    
+    }
+    
+    func itemDroppedOnCharacter(notif: AnyObject) {
+        print("Item Dropped on Character")
+    }
+    
+    func startTimer() {
+        if timer != nil {
+            timer.invalidate()
         }
         
-        golemImage.animationImages = imageArray
-        golemImage.animationDuration = 0.8
-        golemImage.animationRepeatCount = 0
-        golemImage.startAnimating()
+        timer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector:#selector(ViewController.changeGameState), userInfo: nil, repeats: true)
+    }
+    
+    func changeGameState() {
+        penalties += 1
+        if penalties == 1 {
+            skull1.alpha = OPAQUE
+            skull2.alpha = DIM_ALPHA
+        } else if penalties == 2 {
+            skull2.alpha = OPAQUE
+            skull3.alpha = DIM_ALPHA
+        } else if penalties >= 3 {
+            skull3.alpha = OPAQUE
+        } else {
+            skull1.alpha = DIM_ALPHA
+            skull2.alpha = DIM_ALPHA
+            skull3.alpha = DIM_ALPHA
+        }
+        
+        if penalties >= MAX_PENALTIES {
+            gameOver()
+        }
+    }
+    
+    func gameOver() {
+        timer.invalidate()
+        golemImage.playDeathAnimation()
     }
 }
 
