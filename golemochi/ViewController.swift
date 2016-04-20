@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         skull2.alpha = DIM_ALPHA
         skull3.alpha = DIM_ALPHA
         foodImage.alpha = DIM_ALPHA
-        heartImage.alpha = DIM_ALPHA
+       // heartImage.alpha = DIM_ALPHA
         
         foodImage.targetElement = golemImage
         heartImage.targetElement = golemImage
